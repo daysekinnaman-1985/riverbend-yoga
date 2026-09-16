@@ -1,0 +1,225 @@
+:root {
+  --sage: #2F5D50;
+  --sand: #F4EFE6;
+  --clay: #C46B4A;
+  --ink: #1F2A24;
+  --font-head: Georgia, "Times New Roman", serif;
+  --font-body: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--sand);
+  line-height: 1.6;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header and navigation */
+header {
+  background: var(--sage);
+  color: var(--sand);
+  padding: 1rem 1.25rem;
+}
+
+header h1 {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  margin: 0 0 0.4rem;
+  color: var(--sand);
+}
+
+header p {
+  margin: 0 0 0.8rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+nav a {
+  color: var(--sand);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+}
+
+nav a:hover,
+nav a:focus {
+  background: rgba(255, 255, 255, 0.18);
+  outline: none;
+}
+
+/* Main content */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 2.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: var(--font-head);
+  color: var(--sage);
+  font-size: 1.4rem;
+  margin: 0 0 0.6rem;
+  border-bottom: 2px solid var(--clay);
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  font-family: var(--font-head);
+  color: var(--sage);
+  font-size: 1.15rem;
+}
+
+article {
+  background: #fff;
+  border: 1px solid #e0d9cf;
+  border-radius: 8px;
+  padding: 1rem 1.15rem;
+  margin-bottom: 1rem;
+}
+
+figure {
+  margin: 1rem 0;
+}
+
+figcaption {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 0.4rem;
+  font-style: italic;
+}
+
+audio,
+video {
+  width: 100%;
+  max-width: 480px;
+  margin: 0.5rem 0 1rem;
+}
+
+/* Form */
+form {
+  background: #fff;
+  border: 1px solid #e0d9cf;
+  border-radius: 8px;
+  padding: 1.15rem;
+  max-width: 640px;
+}
+
+fieldset {
+  border: 1px solid #d4cdc2;
+  border-radius: 6px;
+  margin: 0 0 1rem;
+  padding: 0.85rem 1rem;
+}
+
+legend {
+  font-family: var(--font-head);
+  font-weight: bold;
+  color: var(--sage);
+  padding: 0 0.4rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin: 0.6rem 0 0.25rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #cfc7bb;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+input[type="radio"] {
+  width: auto;
+  margin-right: 0.4rem;
+}
+
+button {
+  margin-top: 0.5rem;
+  background: var(--clay);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background: #a8573c;
+}
+
+/* Footer */
+footer {
+  background: var(--sage);
+  color: var(--sand);
+  text-align: center;
+  padding: 1rem 1.25rem;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: var(--sand);
+}
+
+/* Larger screens */
+@media (min-width: 700px) {
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  main section:has(article) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  main section:has(article) > h2 {
+    flex: 1 1 100%;
+  }
+
+  article {
+    flex: 1 1 280px;
+    margin-bottom: 0;
+  }
+
+  main {
+    padding: 2rem;
+  }
+}
