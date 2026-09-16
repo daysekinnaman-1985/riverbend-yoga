@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riverbend Yoga Studio | Workshops and Events</title>
+</head>
+<body>
+  <header>
+    <h1>Workshops and Events</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Class Offerings</a></li>
+        <li><a href="about.html">About the Studio</a></li>
+        <li><a href="events.html">Workshops and Events</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <main>
+    <section>
+      <h2>This Month at the Studio</h2>
+      <figure>
+        <img src="yoga-workshop.jpg" alt="Small group seated in a circle during a Saturday workshop at Riverbend Yoga Studio">
+        <figcaption>Saturday Restore and Renew workshop: a slower afternoon practice with guided breathing and supported poses.</figcaption>
+      </figure>
+      <ul>
+        <li>September 12: Breath Basics for Busy Days, 10:00 a.m. to 11:15 a.m.</li>
+        <li>September 20: Restore and Renew, 2:00 p.m. to 3:30 p.m.</li>
+        <li>September 27: Chair Yoga Open House for new students, 11:00 a.m. to 12:00 p.m.</li>
+      </ul>
+    </section>
+ 
+    <section>
+      <h2>Guided Breathing Practice</h2>
+      <p>Listen to a short studio recording before you visit. It introduces the same unhurried breathing cues we use in beginner classes.</p>
+      <audio controls>
+        <source src="yoga-breathing.mp3" type="audio/mpeg">
+        Your browser does not support the audio element. A 45-second guided breathing practice is available as yoga-breathing.mp3. You may also watch yoga-intro.mp4 for a short studio welcome.
+      </audio>
+      <video controls width="480">
+        <source src="yoga-intro.mp4" type="video/mp4">
+        Your browser does not support the video element. The file yoga-intro.mp4 is a brief studio introduction with spoken captions describing the space and first-class expectations.
+      </video>
+    </section>
+ 
+    <section>
+      <h2>Request a Spot or Class Information</h2>
+      <p>Tell us what you are interested in and how you prefer to be contacted. This form does not process payment.</p>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Your contact details</legend>
+          <p>
+            <label for="full-name">Full name</label>
+            <input type="text" id="full-name" name="full-name" required minlength="2" autocomplete="name">
+          </p>
+          <p>
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </p>
+        </fieldset>
+ 
+        <fieldset>
+          <legend>Class or event interest</legend>
+          <p>
+            <label for="interest">I want information about</label>
+            <select id="interest" name="interest" required>
+              <option value="">Select one option</option>
+              <option value="gentle">Gentle Yoga</option>
+              <option value="vinyasa">Beginner Vinyasa</option>
+              <option value="restorative">Restorative Yoga</option>
+              <option value="private">Private session</option>
+              <option value="workshop">Monthly workshop</option>
+            </select>
+          </p>
+          <p>
+            <label for="experience">Experience level</label>
+            <select id="experience" name="experience" required>
+              <option value="">Select your experience</option>
+              <option value="none">No prior yoga experience</option>
+              <option value="some">A few classes</option>
+              <option value="regular">Regular practice</option>
+            </select>
+          </p>
+        </fieldset>
+ 
+        <fieldset>
+          <legend>Preferred contact method</legend>
+          <p>
+            <input type="radio" id="contact-email" name="contact-method" value="email" required>
+            <label for="contact-email">Email</label>
+          </p>
+          <p>
+            <input type="radio" id="contact-phone" name="contact-method" value="phone">
+            <label for="contact-phone">Phone</label>
+          </p>
+          <p>
+            <label for="phone">Phone number (optional unless you chose phone)</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9\-\(\)\s]{10,}" placeholder="555-555-5555">
+          </p>
+        </fieldset>
+ 
+        <p>
+          <label for="message">Message or accommodation request</label>
+          <textarea id="message" name="message" rows="5" maxlength="600" placeholder="Tell us the date you hope to attend or any support you need."></textarea>
+        </p>
+        <p>
+          <button type="submit">Send request</button>
+        </p>
+      </form>
+    </section>
+  </main>
+ 
+  <footer>
+    <p>Riverbend Yoga Studio &middot; Request a workshop spot or class information</p>
+    <p><a href="index.html">Return to Home</a></p>
+  </footer>
+</body>
+</html>
