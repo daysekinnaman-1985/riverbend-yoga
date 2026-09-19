@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const classes = [
     { name: "Gentle Morning Flow", level: "Gentle/Senior", time: "Mon & Wed", desc: "45-minute class" },
-    { name: "Beginner Flow", level: "Beginner", time: "Tue & Thu", desc: "60-minute class" },
+    { name: "Beginner", level: "Beginner", time: "Tue & Thu", desc: "60-minute class" },
     { name: "Community Restorative", level: "All Levels", time: "Saturday", desc: "75-minute class" }
   ];
 
