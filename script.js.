@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const filtered = level === "All Levels" ? classes : classes.filter(c => c.level === level);
     filtered.forEach(c => {
       const div = document.createElement("div");
-      div.innerHTML = "<strong>" + c.name + "</strong> — " + c.time + "<br>" + c.desc;
+      div.innerHTML = "<strong>" + c.name + "</strong>" + c.time + "<br>" + c.desc;
       list.appendChild(div);
     });
   }
