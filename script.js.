@@ -1,0 +1,34 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const classes = [
+    { name: "Gentle Morning Flow", level: "Gentle/Senior", time: "Mon & Wed", desc: "45-minute class" },
+    { name: "Beginner Flow", level: "Beginner", time: "Tue & Thu", desc: "60-minute class" },
+    { name: "Community Restorative", level: "All Levels", time: "Saturday", desc: "75-minute class" }
+  ];
+
+  const list = document.getElementById("class-list");
+  const buttons = document.querySelectorAll(".preference-bar button");
+
+  function render(level) {
+    list.innerHTML = "";
+    const filtered = level === "All Levels" ? classes : classes.filter(c => c.level === level);
+    filtered.forEach(c => {
+      const div = document.createElement("div");
+      div.innerHTML = "<strong>" + c.name + "</strong> — " + c.time + "<br>" + c.desc;
+      list.appendChild(div);
+    });
+  }
+
+  function save(level) {
+    sessionStorage.setItem("riverbendPreference", level);
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", function () {
+      render(btn.dataset.level);
+      save(btn.dataset.level);
+    });
+  });
+
+  const saved = sessionStorage.getItem("riverbendPreference");
+  if (saved) render(saved);
+});
