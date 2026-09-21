@@ -42,10 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     sessionStorage.setItem("riverbendPreference", level);
 
-    const msg = document.getElementById("saved-msg");
-
-    if (msg) msg.textContent = "Saved: " + level;
-
+   
   }
 
 
